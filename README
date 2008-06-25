@@ -1,0 +1,30 @@
+--- Training ---
+* createdb.py [database] [attributes] [data]
+    Creates a packed database from an attributes description and the data. 
+    All other scripts use this database of attributes and data.
+
+    The attributes file consists of a set of attribute descriptions, one per
+    line. Each attribute description consists of a name, a colon, then a
+    comma-separated list of possible values.
+
+    The data file consists of a set of training values, one per line.
+    Each training value consists of a comma-separated list of attributes, in the
+    same order as the attributes file. There should be one extra last column
+    that specifies the class.
+
+* gentree.py [database] [tree]
+    Generates the decision tree from the database.
+
+--- Utilities ---
+* dumpdb.py [all|attrs|data] [database]
+    Dumps the given database in the format in which it had been entered.
+
+* treetodot.py [tree] [graph.dot]
+    Converts the tree file to the Graphviz DOT format for visualization.
+
+--- Classification ---
+* classify.py
+
+--- Misc ---
+* db.py
+    internal use
